@@ -1,0 +1,22 @@
+﻿  test.c
+d:\users\vs code\project1\project1\test.c(802): error C2061: 语法错误: 标识符“ListNode”
+d:\users\vs code\project1\project1\test.c(803): error C2059: 语法错误:“}”
+d:\users\vs code\project1\project1\test.c(805): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+d:\users\vs code\project1\project1\test.c(807): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+d:\users\vs code\project1\project1\test.c(807): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+d:\users\vs code\project1\project1\test.c(807): error C2059: 语法错误:“)”
+d:\users\vs code\project1\project1\test.c(808): error C2054: 在“phead”之后应输入“(”
+d:\users\vs code\project1\project1\test.c(813): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+d:\users\vs code\project1\project1\test.c(813): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+d:\users\vs code\project1\project1\test.c(813): error C2059: 语法错误:“)”
+d:\users\vs code\project1\project1\test.c(814): error C2054: 在“phead”之后应输入“(”
+d:\users\vs code\project1\project1\test.c(835): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+d:\users\vs code\project1\project1\test.c(835): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+d:\users\vs code\project1\project1\test.c(835): error C2059: 语法错误:“)”
+d:\users\vs code\project1\project1\test.c(836): error C2054: 在“phead”之后应输入“(”
+d:\users\vs code\project1\project1\test.c(855): error C2146: 语法错误: 缺少“)”(在标识符“head”的前面)
+d:\users\vs code\project1\project1\test.c(855): error C2061: 语法错误: 标识符“head”
+d:\users\vs code\project1\project1\test.c(855): error C2059: 语法错误:“;”
+d:\users\vs code\project1\project1\test.c(855): error C2059: 语法错误:“)”
+d:\users\vs code\project1\project1\test.c(856): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+d:\users\vs code\project1\project1\test.c(864): error C2059: 语法错误:“}”
