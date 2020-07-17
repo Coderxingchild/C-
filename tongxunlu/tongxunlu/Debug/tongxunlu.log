@@ -1,0 +1,6 @@
+﻿  contact.c
+d:\users\vs code\tongxunlu\tongxunlu\contact.c(209): warning C4477: “scanf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int (*)[8]”
+d:\users\vs code\tongxunlu\tongxunlu\contact.c(210): warning C4133: “函数”: 从“int [8]”到“const char *”的类型不兼容
+  main.c
+  正在生成代码...
+  tongxunlu.vcxproj -> D:\Users\VS code\tongxunlu\Debug\tongxunlu.exe
