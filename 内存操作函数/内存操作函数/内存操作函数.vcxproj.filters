@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="str_mem_.cpp">
+    <ClCompile Include="str_mem_.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mem_.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -123,7 +123,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="str_mem_.cpp" />
+    <ClCompile Include="mem_.c" />
+    <ClCompile Include="str_mem_.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -6,42 +6,86 @@
 #include<stdio.h>
 #include<string.h>
 #include<assert.h>
+#include<ctype.h>
+
 
 ////// 长度不受限制 strcpy  strcat  strcmp
 ////// 长度受限制  strncpy  strncat  strncmp
+
+
+
+
+////////////  strerror 
+////// 打印错误信息
+
+int main()
+{
+	//当调用库函数发生错误时候，就会有错误码
+	//错误码会放在 errno 这个全局变量中
+	// #include<errno.h>
+
+
+	/*printf("%s\n", strerror(0));
+	printf("%s\n", strerror(1));
+	printf("%s\n", strerror(2));
+	printf("%s\n", strerror(3));
+	printf("%s\n", strerror(errno));*/
+
+
+	// 以读的方式打开一个文件
+	FILE* pf = fopen("test.txt", "r");
+	if (pf == NULL) {
+		printf("%s\n", strerror(errno));
+	}
+	else {
+		printf("打开成功\n");
+		fclose(pf);
+		pf = NULL;
+	}
+
+
+	// perror; //打印一个错误信息
+	return 0;
+}
+
+
+
+
+
+
 
 
 ////////// strtok : char *strtok( char *strToken, const char *strDelimit );
 /////// 字符串拆分
 
 
-//int main()
-//{
-//	char arr1[] = "1272209351@qq.com";
-//	char tmp[20] = { 0 };
-//	strcpy(tmp, arr1);
-//	char arr2[] = "@.";
-//	
-//	//code 2
-//	/*char* p = NULL;
-//	for (p = strtok(tmp,arr2); p != NULL; p = strtok(NULL,arr2)) {
-//		printf("%s\n", p);
-//	}*/
-//
-//	
-//	
-//	// code 1
-//	char* p = strtok(tmp, arr2);    //第一次从 tmp 起始位置开始进行分割
-//	printf("%s\n", p);
-//
-//	p = strtok(NULL,arr2);    //第二次从上一步分割位置（NULL）开始进行寻找一个分割位置
-//	printf("%s\n", p);
-//
-//	p = strtok(NULL, arr2);
-//	printf("%s\n", p);
-//
-//	return 0;
-//}
+int main()
+{
+	char arr1[] = "1272209351@qq.com";
+	char tmp[20] = { 0 };
+	strcpy(tmp, arr1);
+	char arr2[] = "@.";
+	
+	//code 2
+	/*char* p = NULL;
+	for (p = strtok(tmp,arr2); p != NULL; p = strtok(NULL,arr2)) {
+		printf("%s\n", p);
+	}*/
+
+	
+	
+	// code 1
+	char* p = strtok(tmp, arr2);    //第一次从 tmp 起始位置开始进行分割
+	printf("%s\n", p);
+
+	p = strtok(NULL,arr2);    //第二次从上一步分割位置（NULL）开始进行寻找一个分割位置
+	printf("%s\n", p);
+
+	p = strtok(NULL, arr2);
+	printf("%s\n", p);
+
+	return 0;
+}
 
 
 
@@ -52,6 +96,47 @@
 
 /////// strstr : char *strstr( const char *string, const char *strCharSet );
 ////// 找子串---返回子串在主串的起始位置开始的字符串
+
+
+////// 模拟实现
+
+//char* my_strstr(const char* str1, const char* str2)
+//{
+//	assert(str1);
+//	assert(str2);
+//
+//	const char* s1 = str1;
+//	const char* s2 = str2;
+//	const char* cp = str1;
+//
+//	if (*s2 == '\0') {
+//		return (char*)str1;
+//	}
+//
+//	while (*cp) {
+//		s1 = cp;
+//		s2 = str2;
+//		while (*s1 && *s2 && *s1 == *s2) {
+//			s1++; s2++;
+//		}
+//		if (*s2 == '\0') {
+//			return (char*)cp;
+//		}
+//		cp++;
+//	}
+//	return NULL; //没有匹配成功
+//}
+//int main()
+//{
+//	char *str1 = "abcdef";
+//	char* str2 = "cde";
+//	char* ret = my_strstr(str1, str2);
+//	printf("%s\n", ret);
+//
+//	return 0;
+//}
+
+
 
 
 //int main()
